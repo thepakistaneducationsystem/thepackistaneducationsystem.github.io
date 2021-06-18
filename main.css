@@ -15,6 +15,9 @@ body {
     padding: 0;
     background-color:#f47b2a;
 }
+p {
+    line-height: 2;
+}
 
 @media (min-width: 992px) {
     .navbar li {
