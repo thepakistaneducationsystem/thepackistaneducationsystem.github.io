@@ -1,0 +1,349 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#f47b2a;
+}
+
+@media (min-width: 992px) {
+    .navbar li {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+.navbar-nav {
+    animation: nav-bar-animation 0.9s;
+}
+
+#nav-logo {
+    animation: nav-bar-animation 0.9s;
+}
+
+.wave-container {
+    position: relative;
+    background: #fff;
+    color: black;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+#curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve path {
+    fill:#f47b2a;
+}
+
+#landing-title {
+    font-size: 4rem;
+    margin-top: 0.25em;
+    /* margin: 4.5rem 1.25rem 2.5rem 5.25rem; */
+    /* font-weight: 500; */
+    /* animation: landing-title-animation 1s; */
+    font-weight: bold;
+    text-align: center;
+    line-height: 1em;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+
+#motto {
+    font-size: 2rem;
+    color: #474b4d;
+    /* animation: landing-text-animation 1s; */
+    text-align: center;
+    margin-top: 0.75em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#landing-descriptor {
+    font-size: 1.25rem;
+    color: #4a545a;
+    /* animation: landing-text-animation 1s; */
+    text-align: center;
+    margin-top: 0.25em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#hook {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #4a545a;
+}
+
+#landing-logo {
+    width: 200px;
+    height: 200px;
+    max-height: 300px;
+    max-width: 300px;
+    margin-top: 2em;
+}
+
+#action-btn {
+    /* margin-left: 8rem;
+    margin-top: 1.5rem; */
+    text-align: center;
+    margin-top: 2em;
+}
+
+@keyframes animateWave {
+    0% {
+        transform: scale(1, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.wave-container>svg {
+    display: inline-block;
+    transform-origin: bottom;
+    /* animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation-delay: 2ms; */
+}
+
+#our-classes {
+    background-color:#f47b2a;
+}
+
+#classes-title {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2em;
+}
+
+#ongoing-class-cards {
+    margin-top: 3em;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    margin-bottom: 8em;
+}
+
+
+/* 
+.card {
+    min-width: 300px;
+    min-height: 250px;
+} */
+
+#our-mission {
+    background: #fff;
+    color: black;
+    overflow: hidden;
+}
+
+#mission-title {
+    text-align: center;
+    padding-top: 2em;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+#mission-text {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+#volunteer-button {
+    margin-bottom: 4em;
+}
+
+#volunteer-button {
+    text-align: center;
+}
+
+#contact-us {
+    text-align: center;
+    background:#f47b2a;
+    padding-bottom: 3em;
+    padding-top: 2em;
+}
+
+#contact-us-info {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/* #our-team {
+    margin-bottom: 6em;
+}
+#our-team-title {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2em;
+}
+#our-team .card {
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 5px;
+    background: #00cba9;
+    color: #EEE;
+}
+#scrolling-section {
+    margin-top: 2em;
+    overflow-x: auto !important;
+} */
+
+
+/* fjhalfkhb */
+
+@keyframes landing-text-animation {
+    from {
+        margin-left: 0rem;
+        opacity: 0.5;
+    }
+    to {
+        margin-left: 3em;
+        opacity: 1;
+    }
+}
+
+@keyframes landing-button-animation {
+    from {
+        margin-left: -5em;
+        opacity: 0.5;
+    }
+    to {
+        margin-left: 3em;
+        opacity: 1;
+    }
+}
+
+@keyframes landing-desc-animation {
+    from {
+        margin-left: -5em;
+        opacity: 0.5;
+    }
+    to {
+        margin-left: 5em;
+        opacity: 1;
+    }
+}
+
+@keyframes landing-title-animation {
+    from {
+        margin-left: 0rem;
+        opacity: 0.5;
+    }
+    to {
+        margin-left: 1em;
+        opacity: 1;
+    }
+}
+
+@keyframes nav-bar-animation {
+    from {
+        opacity: 0;
+        margin-top: -6rem;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wave-container>svg {
+        display: inline-block;
+        transform-origin: bottom;
+        animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        animation-delay: 2ms;
+    }
+    #landing-title {
+        font-size: 4rem;
+        margin-top: 0.75em;
+        /* margin: 4.5rem 1.25rem 2.5rem 5.25rem; */
+        /* font-weight: 500; */
+        animation: landing-title-animation 1s;
+        font-weight: bold;
+        line-height: 1em;
+        text-align: left;
+        margin-left: 1em;
+        /* animation: landing-title-animation 1s; */
+    }
+    #motto {
+        font-size: 2rem;
+        color: #474b4d;
+        animation: landing-text-animation 1s;
+        text-align: left;
+        margin-top: 0.75em;
+        font-weight: bold;
+        margin-left: 3em;
+        margin-right: -3em;
+        /* animation: landing-text-animation 1s; */
+    }
+    #landing-descriptor {
+        font-size: 1.5rem;
+        animation: landing-desc-animation 0.8s;
+        font-weight: normal;
+        margin-top: 0.75em;
+        text-align: left;
+        margin-left: 5em;
+        margin-right: -2em;
+        /* animation: landing-text-animation 1s; */
+    }
+    #landing-logo {
+        width: 40%;
+        height: auto;
+        max-height: 300px;
+        max-width: 300px;
+        margin-top: 2em;
+        margin-left: 10em;
+    }
+    #action-btn {
+        /* margin-left: 8rem;
+        margin-top: 1.5rem; */
+        margin-left: 3em;
+        margin-top: 1em;
+        animation: landing-button-animation 1s;
+    }
+    #mission-text {
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+        font-size: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    #contact-us {
+        text-align: center;
+        /* background: #00cba9; */
+        padding-bottom: 3em;
+        padding-top: 2em;
+    }
+    #contact-us-info {
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
